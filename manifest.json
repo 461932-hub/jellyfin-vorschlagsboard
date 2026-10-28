@@ -1,0 +1,20 @@
+[
+  {
+    "guid": "7b1ec128-0f8a-43c7-8e0f-513883f82a61",
+    "name": "Vorschlagsboard",
+    "description": "Vorschl?ge erstellen, abstimmen und administrieren. Mit dunklem Design passend zur Jellyfin-Oberfl?che.",
+    "overview": "Vorschlagsboard f?r Jellyfin 12.4",
+    "owner": "461932-hub",
+    "category": "General",
+    "versions": [
+      {
+        "version": "2.0.0.1",
+        "changelog": "Farbanpassung: Pflaumen- und Anthrazitt?ne, wei?e Hauptbuttons und graue Filter.",
+        "targetAbi": "12.4.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/vorschlagsboard_2.0.0.1.zip",
+        "checksum": "28bcaed3e16cb1990a5c9e7441681f83",
+        "timestamp": "2026-10-28T00:00:00Z"
+      }
+    ]
+  }
+]
