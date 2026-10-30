@@ -2,11 +2,19 @@
   {
     "guid": "7b1ec128-0f8a-43c7-8e0f-513883f82a61",
     "name": "Vorschlagsboard",
-    "description": "Vorschl?ge erstellen, abstimmen und administrieren. Mit dunklem Design passend zur Jellyfin-Oberfl?che.",
-    "overview": "Vorschlagsboard f?r Jellyfin 12.4",
+    "description": "Vorschläge erstellen, abstimmen und administrieren. Mit dunklem Design passend zur Jellyfin-Oberfläche.",
+    "overview": "Vorschlagsboard für Jellyfin 12.4",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
+      {
+        "version": "2.0.0.3",
+        "changelog": "Seiteneinbindung wie die Bibliotheken: Vorschlagsboard steht hinter allen Bibliothekseinträgen, wird beim Öffnen markiert und bleibt ohne X zum Schließen im Inhaltsbereich. Zentrierter Board-Bereich mit seitlichem Abstand und maximal 1440 Pixeln Breite. Vor-/Zurück-Navigation und Neuladen werden unterstützt. Serverseitiger Überlastungsschutz und Benutzerzuordnung aus 2.0.0.2 bleiben erhalten.",
+        "targetAbi": "12.4.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/vorschlagsboard_2.0.0.3.zip",
+        "checksum": "24bc5b11cedb9ecd4b9a55f0979cb903",
+        "timestamp": "2026-10-30T23:41:13Z"
+      },
       {
         "version": "2.0.0.2",
         "changelog": "Sicherheitsupdate: feste Benutzer-IDs, serverseitige Raten- und Mengenlimits, begrenzte Seitengr??en, Eingabegrenzen und atomare Speicherung einzelner Vorschl?ge. Altdaten werden gesichert; namensbasierte Altstimmen bleiben historisch und werden keinem Konto automatisch zugewiesen. Cinema ben?tigt den beiliegenden Paging-Adapter.",
