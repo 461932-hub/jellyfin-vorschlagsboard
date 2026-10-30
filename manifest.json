@@ -8,6 +8,14 @@
     "category": "General",
     "versions": [
       {
+        "version": "2.0.0.2",
+        "changelog": "Sicherheitsupdate: feste Benutzer-IDs, serverseitige Raten- und Mengenlimits, begrenzte Seitengr??en, Eingabegrenzen und atomare Speicherung einzelner Vorschl?ge. Altdaten werden gesichert; namensbasierte Altstimmen bleiben historisch und werden keinem Konto automatisch zugewiesen. Cinema ben?tigt den beiliegenden Paging-Adapter.",
+        "targetAbi": "12.4.0.0",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/vorschlagsboard_2.0.0.2.zip",
+        "checksum": "56207c5dd74b0801fd88ecc6e57a15c5",
+        "timestamp": "2026-10-30T19:46:18Z"
+      },
+      {
         "version": "2.0.0.1",
         "changelog": "Farbanpassung: Pflaumen- und Anthrazitt?ne, wei?e Hauptbuttons und graue Filter.",
         "targetAbi": "12.4.0.0",
