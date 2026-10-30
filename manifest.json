@@ -34,6 +34,14 @@
     "category": "General",
     "versions": [
       {
+        "version": "1.0.0.1",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Kompatibilität mit Jellyfin Android TV 0.19.10: Persönlich angemeldete Wiedergabe erhält für direkt abspielbare lokale Videos eine authentifizierte URL. Originalqualität ohne erzwungene Umwandlung. Anmeldesperre unverändert; abgemeldete oder ungültige Token werden weiter abgewiesen. Noch auf dem eigenen Fire TV prüfen.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.1.zip",
+        "checksum": "21221887672120122c6169179298df7e",
+        "timestamp": "2026-10-30T23:18:19Z"
+      },
+      {
         "version": "1.0.0.0",
         "targetAbi": "12.4.0.0",
         "changelog": "Anmeldefilter für direkte Mediencontroller mit Jellyfins Standardrichtlinie. Ohne gültige Anmeldung HTTP 401, gültige Wiedergabe weiterhin möglich. Lokal mit Jellyfin 12.4 geprüft; keine allgemeine Sicherheitsgarantie.",
