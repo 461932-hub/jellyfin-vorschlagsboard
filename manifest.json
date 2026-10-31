@@ -36,11 +36,19 @@
   {
     "guid": "e4aad1e4-4494-4cdd-b858-b8ecf8192cd7",
     "name": "Medienzugriffsschutz",
-    "description": "Zusätzliche Anmeldung und Benutzerrechte für Medien und Bibliotheksbilder. Browser-Bildanmeldung über HTTPS mit kurzlebigem geschütztem Cookie. TV-Kompatibilität weiterhin standardmäßig aus.",
-    "overview": "Medienzugriffsschutz für Jellyfin 12.4 einschließlich Bibliotheksbildern. Vor dem Update die HTTPS- und Clienthinweise lesen.",
+    "description": "Anmeldung und Benutzerrechte fuer Medien und Bibliotheksbilder. Korrigierte Bildanzeige in Originaloberflaeche, Cinema und Wiedergabeuebersicht.",
+    "overview": "Medienzugriffsschutz fuer Jellyfin 12.4 mit Korrektur der Browser-Bildanmeldung.",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
+      {
+        "version": "1.0.0.4",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Korrigiert unscharfe Poster und fehlende Titel-/Hintergrundbilder der Wiedergabeuebersicht nach 1.0.0.3. Ein Browseradapter laedt gleichurspruengliche Bibliotheksbilder mit der bestehenden Anmeldung im Header und zeigt sie ueber temporaere Objekt-URLs an. Unter HTTP und HTTPS auch ohne Bildcookie geprueft. Keine Freigabe anonymer Bilder und keine neuen URL-Token. Serverrechte und TV-Einstellungen bleiben unveraendert. Nach Update Browser mit Strg+F5 neu laden. Physische TV-/iPhone-Apps weiterhin gesondert pruefen.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.4.zip",
+        "checksum": "042ceacabb1b2b0fde5d99cfa6070b27",
+        "timestamp": "2026-10-31T14:20:44Z"
+      },
       {
         "version": "1.0.0.3",
         "targetAbi": "12.4.0.0",
