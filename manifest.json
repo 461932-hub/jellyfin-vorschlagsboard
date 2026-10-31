@@ -36,11 +36,19 @@
   {
     "guid": "e4aad1e4-4494-4cdd-b858-b8ecf8192cd7",
     "name": "Medienzugriffsschutz",
-    "description": "Ergänzt gültige Jellyfin-Anmeldung für direkte Video-, Audio-, HLS-, Untertitel- und Anhangzugriffe. Separat entwickeltes Schutzplugin für Jellyfin 12.4.",
-    "overview": "Sperrt die abgedeckten Medienrouten ohne gültige Jellyfin-Zugangsdaten. Login und Vorschlagsboard bleiben erhalten. Bitte zuerst auf jellyfin-test prüfen.",
+    "description": "Zusätzliche Anmeldung und Benutzer-Medienrechte für die abgedeckten Jellyfin-12.4-Medienrouten. TV-Kompatibilität standardmäßig aus; Aktivierung nur mit Risikobestätigung, Geräte-ID und fester Zieladresse.",
+    "overview": "Medienzugriffsschutz für Jellyfin 12.4 mit sicherer Voreinstellung. Ältere HLS- und rohe Live-TV-Dateirouten sind gesperrt; Hinweise vor dem Aktualisieren lesen.",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
+      {
+        "version": "1.0.0.2",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Sichere Voreinstellung: Android-TV-0.19.10-Anpassung ist aus. Bewusste Aktivierung nur mit Token-Risikobestätigung, Geräte-ID und fester Basisadresse; HTTP erfordert zusätzliche Freigabe. Keine Zieladresse aus Host/Forwarded-Headern. Erweiterte Bibliotheks-, Quellen- und Untertitelrechteprüfung. Alte ungebundene HLS- und rohe Live-TV-Dateirouten werden gesperrt; moderne HLS-Wiedergabe separat geprüft. Server-Logschutz benötigt zusätzlich die dokumentierte logging.json-Einstellung; Proxy-Logschutz ebenfalls anwenden. Praktische Prüfergebnisse liegen bei. Echter Fire-TV-Gerätetest steht aus.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.2.zip",
+        "checksum": "edbb1460f6ea830b41f0034f42274ab9",
+        "timestamp": "2026-10-31T00:34:07Z"
+      },
       {
         "version": "1.0.0.1",
         "targetAbi": "12.4.0.0",
