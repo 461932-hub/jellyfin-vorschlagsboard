@@ -36,11 +36,19 @@
   {
     "guid": "e4aad1e4-4494-4cdd-b858-b8ecf8192cd7",
     "name": "Medienzugriffsschutz",
-    "description": "Anmeldung und Benutzerrechte fuer Medien und Bibliotheksbilder. Mit geschuetzten Covern fuer Android TV 0.19.10.",
-    "overview": "Medienzugriffsschutz fuer Jellyfin 12.4 mit kurzlebigen Bildberechtigungen fuer den TV-Client.",
+    "description": "Anmeldung und Benutzerrechte fuer Medien und Bibliotheksbilder. Mit geschuetzten TV-Covern und nativer HLS-Startauswahl fuer Android TV 0.19.10.",
+    "overview": "Medienzugriffsschutz fuer Jellyfin 12.4 mit TV-Covern und korrigiertem TV-Wiedergabestart.",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
+      {
+        "version": "1.0.0.6",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Android TV 0.19.10 fordert mit vorhandenem HLS-Profil sofort den nativen Streamingpfad an, statt zuerst einen nicht authentifizierten Direktstart zu versuchen. Native URLs, Formataushandlung und Berechtigungen bleiben erhalten. Geeignete Videospuren koennen ohne Neukodierung kopiert werden; Audio und Untertitel koennen Umwandlung erfordern. Neue Startauswahl abschaltbar. Alte Direct-Play-URL-Anpassung bleibt gesondertes Opt-in mit Risikobestaetigung, Geraete-ID und fester Basisadresse. Native HLS-Adressen koennen weiterhin Sitzungstoken enthalten; Logs schuetzen. TV-Bildschutz aus 1.0.0.5 bleibt erhalten. Physischer Fire-TV-Test steht noch aus.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.6.zip",
+        "checksum": "a766904fb3506d53b0ab0cfa3d91be59",
+        "timestamp": "2026-10-31T19:13:57Z"
+      },
       {
         "version": "1.0.0.5",
         "targetAbi": "12.4.0.0",
