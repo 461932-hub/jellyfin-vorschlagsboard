@@ -36,11 +36,19 @@
   {
     "guid": "e4aad1e4-4494-4cdd-b858-b8ecf8192cd7",
     "name": "Medienzugriffsschutz",
-    "description": "Zusätzliche Anmeldung und Benutzer-Medienrechte für die abgedeckten Jellyfin-12.4-Medienrouten. TV-Kompatibilität standardmäßig aus; Aktivierung nur mit Risikobestätigung, Geräte-ID und fester Zieladresse.",
-    "overview": "Medienzugriffsschutz für Jellyfin 12.4 mit sicherer Voreinstellung. Ältere HLS- und rohe Live-TV-Dateirouten sind gesperrt; Hinweise vor dem Aktualisieren lesen.",
+    "description": "Zusätzliche Anmeldung und Benutzerrechte für Medien und Bibliotheksbilder. Browser-Bildanmeldung über HTTPS mit kurzlebigem geschütztem Cookie. TV-Kompatibilität weiterhin standardmäßig aus.",
+    "overview": "Medienzugriffsschutz für Jellyfin 12.4 einschließlich Bibliotheksbildern. Vor dem Update die HTTPS- und Clienthinweise lesen.",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
+      {
+        "version": "1.0.0.3",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Bibliotheksbilder erfordern Anmeldung und Sichtbarkeit des Inhalts. Bildaliase und namensbasierte Künstler-/Genre-/Personen-/Studiobilder eingeschlossen. Für die Original-Weboberfläche: fünf Minuten gültiges Secure-/HttpOnly-/SameSite-Strict-Cookie, ausschließlich für Bildrouten; native Sitzung und Rechte werden bei jedem Abruf erneut geprüft. Keine neuen URL-Token. Browser-Bildanmeldung erfordert HTTPS und korrekt bekannte Proxys; HTTP-Browser und Apps ohne authentifizierte Bildanfragen können Cover nicht laden. Cache-Control private, no-store. Bestehende TV-Optionen und Mediensperren bleiben erhalten. Prüfbericht und Installationshinweise liegen bei.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.3.zip",
+        "checksum": "cb81cc9b36b0d9424abe5def8bbdca43",
+        "timestamp": "2026-10-31T13:43:53Z"
+      },
       {
         "version": "1.0.0.2",
         "targetAbi": "12.4.0.0",
