@@ -2,14 +2,14 @@
   {
     "guid": "7b1ec128-0f8a-43c7-8e0f-513883f82a61",
     "name": "Vorschlagsboard",
-    "description": "Vorschläge erstellen, abstimmen und administrieren. Mit dunklem Design passend zur Jellyfin-Oberfläche.",
-    "overview": "Vorschlagsboard für Jellyfin 12.4",
+    "description": "VorschlÃ¤ge erstellen, abstimmen und administrieren. Mit dunklem Design passend zur Jellyfin-OberflÃ¤che.",
+    "overview": "Vorschlagsboard fÃ¼r Jellyfin 12.4",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
       {
         "version": "2.0.0.3",
-        "changelog": "Seiteneinbindung wie die Bibliotheken: Vorschlagsboard steht hinter allen Bibliothekseinträgen, wird beim Öffnen markiert und bleibt ohne X zum Schließen im Inhaltsbereich. Zentrierter Board-Bereich mit seitlichem Abstand und maximal 1440 Pixeln Breite. Vor-/Zurück-Navigation und Neuladen werden unterstützt. Serverseitiger Überlastungsschutz und Benutzerzuordnung aus 2.0.0.2 bleiben erhalten.",
+        "changelog": "Seiteneinbindung wie die Bibliotheken: Vorschlagsboard steht hinter allen BibliothekseintrÃ¤gen, wird beim Ã–ffnen markiert und bleibt ohne X zum SchlieÃŸen im Inhaltsbereich. Zentrierter Board-Bereich mit seitlichem Abstand und maximal 1440 Pixeln Breite. Vor-/ZurÃ¼ck-Navigation und Neuladen werden unterstÃ¼tzt. Serverseitiger Ãœberlastungsschutz und Benutzerzuordnung aus 2.0.0.2 bleiben erhalten.",
         "targetAbi": "12.4.0.0",
         "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/vorschlagsboard_2.0.0.3.zip",
         "checksum": "24bc5b11cedb9ecd4b9a55f0979cb903",
@@ -36,11 +36,19 @@
   {
     "guid": "e4aad1e4-4494-4cdd-b858-b8ecf8192cd7",
     "name": "Medienzugriffsschutz",
-    "description": "Anmeldung und Benutzerrechte fuer Medien und Bibliotheksbilder. Korrigierte Bildanzeige in Originaloberflaeche, Cinema und Wiedergabeuebersicht.",
-    "overview": "Medienzugriffsschutz fuer Jellyfin 12.4 mit Korrektur der Browser-Bildanmeldung.",
+    "description": "Anmeldung und Benutzerrechte fuer Medien und Bibliotheksbilder. Mit geschuetzten Covern fuer Android TV 0.19.10.",
+    "overview": "Medienzugriffsschutz fuer Jellyfin 12.4 mit kurzlebigen Bildberechtigungen fuer den TV-Client.",
     "owner": "461932-hub",
     "category": "General",
     "versions": [
+      {
+        "version": "1.0.0.5",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Android TV 0.19.10 kann geschuetzte Cover mit zehn Minuten gueltigen, verschluesselten Berechtigungen fuer genau ein Bild laden. Kein normales Jellyfin-Zugangstoken in neuen Bildadressen. Anmeldung, Sitzungswiderruf, aktuelle Bibliotheksrechte und Bildumfang werden weiter geprueft. HTTPS standardmaessig; unverschluesselte TV-Bilder ueber HTTP benoetigen eine eigene ausdrueckliche Einstellung. Optionale Einschraenkung auf TV-Geraete-IDs. Browser-Bildanmeldung und bisherige Wiedergabe-Einstellungen bleiben erhalten. Nach Update TV-App vollstaendig beenden und neu oeffnen. Physischer Fire-TV-Test steht noch aus.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.5.zip",
+        "checksum": "c3d53861f11975e4593c10b19c005c88",
+        "timestamp": "2026-10-31T17:29:06Z"
+      },
       {
         "version": "1.0.0.4",
         "targetAbi": "12.4.0.0",
@@ -52,7 +60,7 @@
       {
         "version": "1.0.0.3",
         "targetAbi": "12.4.0.0",
-        "changelog": "Bibliotheksbilder erfordern Anmeldung und Sichtbarkeit des Inhalts. Bildaliase und namensbasierte Künstler-/Genre-/Personen-/Studiobilder eingeschlossen. Für die Original-Weboberfläche: fünf Minuten gültiges Secure-/HttpOnly-/SameSite-Strict-Cookie, ausschließlich für Bildrouten; native Sitzung und Rechte werden bei jedem Abruf erneut geprüft. Keine neuen URL-Token. Browser-Bildanmeldung erfordert HTTPS und korrekt bekannte Proxys; HTTP-Browser und Apps ohne authentifizierte Bildanfragen können Cover nicht laden. Cache-Control private, no-store. Bestehende TV-Optionen und Mediensperren bleiben erhalten. Prüfbericht und Installationshinweise liegen bei.",
+        "changelog": "Bibliotheksbilder erfordern Anmeldung und Sichtbarkeit des Inhalts. Bildaliase und namensbasierte KÃ¼nstler-/Genre-/Personen-/Studiobilder eingeschlossen. FÃ¼r die Original-WeboberflÃ¤che: fÃ¼nf Minuten gÃ¼ltiges Secure-/HttpOnly-/SameSite-Strict-Cookie, ausschlieÃŸlich fÃ¼r Bildrouten; native Sitzung und Rechte werden bei jedem Abruf erneut geprÃ¼ft. Keine neuen URL-Token. Browser-Bildanmeldung erfordert HTTPS und korrekt bekannte Proxys; HTTP-Browser und Apps ohne authentifizierte Bildanfragen kÃ¶nnen Cover nicht laden. Cache-Control private, no-store. Bestehende TV-Optionen und Mediensperren bleiben erhalten. PrÃ¼fbericht und Installationshinweise liegen bei.",
         "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.3.zip",
         "checksum": "cb81cc9b36b0d9424abe5def8bbdca43",
         "timestamp": "2026-10-31T13:43:53Z"
@@ -60,7 +68,7 @@
       {
         "version": "1.0.0.2",
         "targetAbi": "12.4.0.0",
-        "changelog": "Sichere Voreinstellung: Android-TV-0.19.10-Anpassung ist aus. Bewusste Aktivierung nur mit Token-Risikobestätigung, Geräte-ID und fester Basisadresse; HTTP erfordert zusätzliche Freigabe. Keine Zieladresse aus Host/Forwarded-Headern. Erweiterte Bibliotheks-, Quellen- und Untertitelrechteprüfung. Alte ungebundene HLS- und rohe Live-TV-Dateirouten werden gesperrt; moderne HLS-Wiedergabe separat geprüft. Server-Logschutz benötigt zusätzlich die dokumentierte logging.json-Einstellung; Proxy-Logschutz ebenfalls anwenden. Praktische Prüfergebnisse liegen bei. Echter Fire-TV-Gerätetest steht aus.",
+        "changelog": "Sichere Voreinstellung: Android-TV-0.19.10-Anpassung ist aus. Bewusste Aktivierung nur mit Token-RisikobestÃ¤tigung, GerÃ¤te-ID und fester Basisadresse; HTTP erfordert zusÃ¤tzliche Freigabe. Keine Zieladresse aus Host/Forwarded-Headern. Erweiterte Bibliotheks-, Quellen- und UntertitelrechteprÃ¼fung. Alte ungebundene HLS- und rohe Live-TV-Dateirouten werden gesperrt; moderne HLS-Wiedergabe separat geprÃ¼ft. Server-Logschutz benÃ¶tigt zusÃ¤tzlich die dokumentierte logging.json-Einstellung; Proxy-Logschutz ebenfalls anwenden. Praktische PrÃ¼fergebnisse liegen bei. Echter Fire-TV-GerÃ¤tetest steht aus.",
         "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.2.zip",
         "checksum": "edbb1460f6ea830b41f0034f42274ab9",
         "timestamp": "2026-10-31T00:34:07Z"
@@ -68,7 +76,7 @@
       {
         "version": "1.0.0.1",
         "targetAbi": "12.4.0.0",
-        "changelog": "Kompatibilität mit Jellyfin Android TV 0.19.10: Persönlich angemeldete Wiedergabe erhält für direkt abspielbare lokale Videos eine authentifizierte URL. Originalqualität ohne erzwungene Umwandlung. Anmeldesperre unverändert; abgemeldete oder ungültige Token werden weiter abgewiesen. Noch auf dem eigenen Fire TV prüfen.",
+        "changelog": "KompatibilitÃ¤t mit Jellyfin Android TV 0.19.10: PersÃ¶nlich angemeldete Wiedergabe erhÃ¤lt fÃ¼r direkt abspielbare lokale Videos eine authentifizierte URL. OriginalqualitÃ¤t ohne erzwungene Umwandlung. Anmeldesperre unverÃ¤ndert; abgemeldete oder ungÃ¼ltige Token werden weiter abgewiesen. Noch auf dem eigenen Fire TV prÃ¼fen.",
         "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.1.zip",
         "checksum": "21221887672120122c6169179298df7e",
         "timestamp": "2026-10-30T23:18:19Z"
@@ -76,7 +84,7 @@
       {
         "version": "1.0.0.0",
         "targetAbi": "12.4.0.0",
-        "changelog": "Anmeldefilter für direkte Mediencontroller mit Jellyfins Standardrichtlinie. Ohne gültige Anmeldung HTTP 401, gültige Wiedergabe weiterhin möglich. Lokal mit Jellyfin 12.4 geprüft; keine allgemeine Sicherheitsgarantie.",
+        "changelog": "Anmeldefilter fÃ¼r direkte Mediencontroller mit Jellyfins Standardrichtlinie. Ohne gÃ¼ltige Anmeldung HTTP 401, gÃ¼ltige Wiedergabe weiterhin mÃ¶glich. Lokal mit Jellyfin 12.4 geprÃ¼ft; keine allgemeine Sicherheitsgarantie.",
         "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/medienzugriffsschutz_1.0.0.0.zip",
         "checksum": "f93230ff53bbeb14c32beab7b1934bed",
         "timestamp": "2026-10-30T22:15:22Z"
