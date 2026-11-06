@@ -1,0 +1,139 @@
+{
+  "completed": true,
+  "checks": [
+    {
+      "label": "Unauthenticated board data remain denied",
+      "pass": true
+    },
+    {
+      "label": "Desktop board remains last after all five libraries",
+      "pass": true
+    },
+    {
+      "label": "Desktop board remains embedded, active and without a close button",
+      "pass": true
+    },
+    {
+      "label": "Desktop reload restores the board",
+      "pass": true
+    },
+    {
+      "label": "Legacy Cinema ownership marker retains its separate content view",
+      "pass": true
+    },
+    {
+      "label": "Desktop logout removes board content and both navigation entries even with legacy Cinema ownership",
+      "pass": true
+    },
+    {
+      "label": "Original: mobile board follows the original library entries",
+      "pass": true
+    },
+    {
+      "label": "Original: native menu closes and embedded board stays visible",
+      "pass": true
+    },
+    {
+      "label": "Original: reopening the menu marks the active board",
+      "pass": true
+    },
+    {
+      "label": "Original: selecting the active board keeps its content and closes the menu",
+      "pass": true
+    },
+    {
+      "label": "Original: native Series navigation restores the original page",
+      "pass": true
+    },
+    {
+      "label": "Original: Back and Forward restore the correct native/board route",
+      "pass": true
+    },
+    {
+      "label": "Original: direct reload works while the drawer is closed",
+      "pass": true
+    },
+    {
+      "label": "Original: board fits 320/360/390px without horizontal overflow",
+      "pass": true
+    },
+    {
+      "label": "Original: rotation keeps the selected board",
+      "pass": true
+    },
+    {
+      "label": "Original: resizing to desktop restores the final active header tab",
+      "pass": true
+    },
+    {
+      "label": "Original: remounting menu contents recreates one active entry",
+      "pass": true
+    },
+    {
+      "label": "Original: mobile logout removes board and menu entry",
+      "pass": true
+    },
+    {
+      "label": "Original: no JavaScript page errors",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: mobile board follows the original library entries",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: native menu closes and embedded board stays visible",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: reopening the menu marks the active board",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: selecting the active board keeps its content and closes the menu",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: native Series navigation restores the original page",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: Back and Forward restore the correct native/board route",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: direct reload works while the drawer is closed",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: board fits 320/360/390px without horizontal overflow",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: rotation keeps the selected board",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: resizing to desktop restores the final active header tab",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: remounting menu contents recreates one active entry",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: mobile logout removes board and menu entry",
+      "pass": true
+    },
+    {
+      "label": "Cinema27: no JavaScript page errors",
+      "pass": true
+    },
+    {
+      "label": "Board still requires authentication after browser logout",
+      "pass": true
+    }
+  ],
+  "scope": "Real isolated Jellyfin 12.4, built plugin DLL, real native drawer and desktop navigation, authenticated iframe; original web and Preview27 Cinema assets in mobile Chromium; no physical phone",
+  "nasModified": false
+}

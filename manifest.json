@@ -8,6 +8,14 @@
     "category": "General",
     "versions": [
       {
+        "version": "2.0.0.4",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Handy-Einbindung: Vorschlagsboard erscheint im originalen Seitenmenue unter den Bibliotheken, bleibt beim Schliessen des Menues eingebettet und wird als aktive Seite markiert. Desktop-Navigation, Neuladen und Zurueck/Vorwaerts bleiben erhalten. Abmeldung entfernt das Board. Bestehende Daten-, Anmelde- und Berechtigungspruefungen bleiben unveraendert.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/vorschlagsboard_2.0.0.4.zip",
+        "checksum": "903b3c542a517c933b31e43892baa9fd",
+        "timestamp": "2026-11-06T23:31:11Z"
+      },
+      {
         "version": "2.0.0.3",
         "changelog": "Seiteneinbindung wie die Bibliotheken: Vorschlagsboard steht hinter allen BibliothekseintrÃ¤gen, wird beim Ã–ffnen markiert und bleibt ohne X zum SchlieÃŸen im Inhaltsbereich. Zentrierter Board-Bereich mit seitlichem Abstand und maximal 1440 Pixeln Breite. Vor-/ZurÃ¼ck-Navigation und Neuladen werden unterstÃ¼tzt. Serverseitiger Ãœberlastungsschutz und Benutzerzuordnung aus 2.0.0.2 bleiben erhalten.",
         "targetAbi": "12.4.0.0",

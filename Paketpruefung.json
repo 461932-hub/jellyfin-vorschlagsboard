@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0.4",
+  "targetAbi": "12.4.0.0",
+  "zipContents": [
+    "Jellyfin.Plugin.SuggestionBoard.dll"
+  ],
+  "zipMd5": "903b3c542a517c933b31e43892baa9fd",
+  "zipSha256": "4b4ea0a8f05db7d8ad4a36f59422303ca1ecb979d4063fd7241ef33cee07c0e8",
+  "dllSha256": "69a9a88f8e36e9ba6b51dba85d57c24c8f10261d2dd14a57e725dda505dfe096",
+  "browserChecksPassed": 33,
+  "knownDependencyVulnerabilitiesReported": 0,
+  "changedSourceFiles": [
+    "Jellyfin.Plugin.SuggestionBoard.csproj",
+    "WebInjectionMiddleware.cs",
+    "Web/client.js"
+  ],
+  "unchangedSecurityAndStorageFiles": [
+    "Api/SuggestionBoardController.cs",
+    "Models/SuggestionModels.cs",
+    "Security/BoardRequestLimiter.cs",
+    "Security/BoardSecurityFilter.cs",
+    "Storage/SuggestionStore.cs"
+  ],
+  "originalDesktopNavigationPreserved": true,
+  "realJellyfinVersion": "12.4.0.0",
+  "cinemaAssetsVersion": "12.4-preview27",
+  "physicalPhoneAppTested": false,
+  "scope": "Built managed DLL on isolated Windows Jellyfin 12.4; original native menu and embedded authenticated board, mobile Chromium, original web and current Cinema assets",
+  "nasModified": false,
+  "githubUploaded": false
+}

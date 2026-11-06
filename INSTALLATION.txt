@@ -1,0 +1,25 @@
+Vorschlagsboard 2.0.0.4 fuer Jellyfin 12.4
+
+Neu: Auf dem Handy das Menue oben links oeffnen und unter den Bibliotheken
+Vorschlagsboard waehlen. Das Menue schliesst wie gewohnt, das Board bleibt
+als eingebettete Seite sichtbar und wird beim naechsten Menueoeffnen markiert.
+
+Installation oder Update ueber Jellyfin:
+1. Verwaltung -> Plugins -> Katalog -> Vorschlagsboard oeffnen.
+2. Version 2.0.0.4 waehlen und installieren.
+3. Jellyfin neu starten, damit die neue DLL geladen wird.
+4. Die Handy-App vollstaendig schliessen und neu oeffnen.
+5. Oben links das Seitenmenue oeffnen -> Vorschlagsboard.
+
+Falls das Repository noch fehlt: Verwaltung -> Plugins -> Repositorien.
+Name: Vorschlagsboard
+URL: https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/manifest.json
+
+Das Plugin wird auf dem Server installiert. In der Handy-App ist keine
+zusaetzliche Installation erforderlich. Getestet wurde die Weboberflaeche,
+wie sie die offizielle Jellyfin-Android-App verwendet, bei 320/360/390 Pixeln.
+Native Clients mit einer eigenen Oberflaeche sind damit nicht abgedeckt.
+
+Vorhandene Plugin-ID, Datenspeicherung und Berechtigungspruefungen bleiben
+erhalten. Dieses Update enthaelt keine Aenderung am Server-Image.
+33 Browserpruefungen bestanden; kein physischer Handy-App-Test.
