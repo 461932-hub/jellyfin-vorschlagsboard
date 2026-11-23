@@ -1,0 +1,68 @@
+{
+  "completed": true,
+  "checks": [
+    {
+      "label": "Real administrator and two normal Jellyfin accounts authenticated",
+      "pass": true
+    },
+    {
+      "label": "Create response is anonymous even for the author",
+      "pass": true
+    },
+    {
+      "label": "Administrator sees their real name when creating a suggestion",
+      "pass": true
+    },
+    {
+      "label": "Normal accounts see all existing and new proposals anonymously in both list orders",
+      "pass": true
+    },
+    {
+      "label": "Paged list response is anonymous",
+      "pass": true
+    },
+    {
+      "label": "Administrator sees the stored names of every author",
+      "pass": true
+    },
+    {
+      "label": "Reading as administrator does not leak names into subsequent normal-user responses",
+      "pass": true
+    },
+    {
+      "label": "Vote and remove-vote responses are anonymous and retain vote state",
+      "pass": true
+    },
+    {
+      "label": "Administrator sees the author when voting",
+      "pass": true
+    },
+    {
+      "label": "Normal accounts cannot change status or delete suggestions",
+      "pass": true
+    },
+    {
+      "label": "Closed suggestions remain anonymous and reject further votes",
+      "pass": true
+    },
+    {
+      "label": "Unauthenticated clients cannot read board data",
+      "pass": true
+    },
+    {
+      "label": "Normal account sees Anonym in embedded board",
+      "pass": true
+    },
+    {
+      "label": "Administrator sees author names in embedded board",
+      "pass": true
+    },
+    {
+      "label": "Reading old proposals preserves their stored names and exact record bytes",
+      "pass": true
+    }
+  ],
+  "version": "2.0.0.5",
+  "scope": "Built plugin on isolated Jellyfin 12.4, real authentication and browser rendering",
+  "nasModified": false
+}

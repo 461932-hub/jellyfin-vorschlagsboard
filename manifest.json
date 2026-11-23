@@ -8,6 +8,14 @@
     "category": "General",
     "versions": [
       {
+        "version": "2.0.0.5",
+        "targetAbi": "12.4.0.0",
+        "changelog": "Normale Nutzer sehen bei allen Vorschlaegen Anonym. Nur Jellyfin-Administratoren erhalten die gespeicherten Autorennamen. Die Anonymisierung erfolgt serverseitig fuer Listen, neue Vorschlaege, Abstimmungen und Statusantworten. Vorhandene Vorschlaege sind ebenfalls abgedeckt.",
+        "sourceUrl": "https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/vorschlagsboard_2.0.0.5.zip",
+        "checksum": "a2c31908d23582145d78104b774b8e19",
+        "timestamp": "2026-11-23T18:56:25Z"
+      },
+      {
         "version": "2.0.0.4",
         "targetAbi": "12.4.0.0",
         "changelog": "Handy-Einbindung: Vorschlagsboard erscheint im originalen Seitenmenue unter den Bibliotheken, bleibt beim Schliessen des Menues eingebettet und wird als aktive Seite markiert. Desktop-Navigation, Neuladen und Zurueck/Vorwaerts bleiben erhalten. Abmeldung entfernt das Board. Bestehende Daten-, Anmelde- und Berechtigungspruefungen bleiben unveraendert.",

@@ -1,3 +1,12 @@
+Aktuelle Version ist **Vorschlagsboard 2.0.0.5 für Jellyfin 12.4**.
+
+Alle normalen Nutzer sehen bei den Vorschlägen **Anonym**. Nur Administratoren
+sehen die gespeicherten Namen. Das gilt für vorhandene und neue Vorschläge
+und wird im Server bei jeder API-Antwort geprüft.
+
+Zum Aktualisieren im Jellyfin-Plugin-Katalog Version 2.0.0.5 installieren,
+Jellyfin neu starten und die Webseite beziehungsweise Handy-App neu öffnen.
+
 # jellyfin-vorschlagsboard
 
 ## Vorschlagsboard 2.0.0.4

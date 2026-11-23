@@ -1,0 +1,15 @@
+{
+  "version": "2.0.0.5",
+  "targetAbi": "12.4.0.0",
+  "md5": "a2c31908d23582145d78104b774b8e19",
+  "sha256": "7f6cc3deea6a84e0e1b8c1aceb4f5a5b89dd6ac06f6c298969614ebf72c76442",
+  "dllSha256": "fb6fcc61ee9dc5a4268992f16e49072e0108930c9177c7cb5b4a39d624162639",
+  "changedSourceFiles": [
+    "Api/SuggestionBoardController.cs",
+    "Jellyfin.Plugin.SuggestionBoard.csproj",
+    "Web/client.js",
+    "WebInjectionMiddleware.cs"
+  ],
+  "privacyChecksPassed": 15,
+  "nasInstalled": false
+}

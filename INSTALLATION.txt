@@ -1,25 +1,19 @@
-Vorschlagsboard 2.0.0.4 fuer Jellyfin 12.4
+Vorschlagsboard 2.0.0.5 für Jellyfin 12.4
 
-Neu: Auf dem Handy das Menue oben links oeffnen und unter den Bibliotheken
-Vorschlagsboard waehlen. Das Menue schliesst wie gewohnt, das Board bleibt
-als eingebettete Seite sichtbar und wird beim naechsten Menueoeffnen markiert.
+Normale Nutzer sehen als Autor bei jedem Vorschlag „Anonym“.
+Jellyfin-Administratoren sehen die gespeicherten Benutzernamen.
+Das gilt auch für bereits vorhandene Vorschläge.
 
-Installation oder Update ueber Jellyfin:
-1. Verwaltung -> Plugins -> Katalog -> Vorschlagsboard oeffnen.
-2. Version 2.0.0.4 waehlen und installieren.
-3. Jellyfin neu starten, damit die neue DLL geladen wird.
-4. Die Handy-App vollstaendig schliessen und neu oeffnen.
-5. Oben links das Seitenmenue oeffnen -> Vorschlagsboard.
+Update über Jellyfin
+1. Verwaltung -> Plugins -> Katalog -> Vorschlagsboard öffnen.
+2. Version 2.0.0.5 installieren.
+3. Den Jellyfin-Container in CasaOS neu starten.
+4. Die Jellyfin-Webseite neu laden und die Handy-App neu öffnen.
 
-Falls das Repository noch fehlt: Verwaltung -> Plugins -> Repositorien.
-Name: Vorschlagsboard
-URL: https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/manifest.json
+Repository-URL
+https://raw.githubusercontent.com/461932-hub/jellyfin-vorschlagsboard/main/manifest.json
 
-Das Plugin wird auf dem Server installiert. In der Handy-App ist keine
-zusaetzliche Installation erforderlich. Getestet wurde die Weboberflaeche,
-wie sie die offizielle Jellyfin-Android-App verwendet, bei 320/360/390 Pixeln.
-Native Clients mit einer eigenen Oberflaeche sind damit nicht abgedeckt.
-
-Vorhandene Plugin-ID, Datenspeicherung und Berechtigungspruefungen bleiben
-erhalten. Dieses Update enthaelt keine Aenderung am Server-Image.
-33 Browserpruefungen bestanden; kein physischer Handy-App-Test.
+Die Anonymisierung wird im Server für jede API-Antwort angewendet.
+Die gespeicherten Namen stehen Administratoren weiterhin zur Verfügung.
+Geprüft mit echten Konten auf einem isolierten Jellyfin-12.4-Server,
+einschließlich Listen, Seitenauswahl, Abstimmungen, Status und Browseranzeige.
